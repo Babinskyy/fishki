@@ -1,0 +1,17 @@
+---
+import Layout from "../layouts/Layout.astro";
+import FlashcardGenerationView from "../components/FlashcardGenerationView";
+---
+
+<Layout title="Generate Flashcards - 10xCards">
+  <main class="container mx-auto px-4 sm:px-6 py-8 min-h-screen">
+    <div class="max-w-4xl mx-auto">
+      <h1 class="text-2xl sm:text-3xl font-bold mb-6">Generate Flashcards</h1>
+      <p class="mb-8 text-muted-foreground">
+        Paste your text below and our AI will automatically generate flashcards for you. You'll be able to review, edit,
+        and save the results.
+      </p>
+      <FlashcardGenerationView client:load />
+    </div>
+  </main>
+</Layout>
